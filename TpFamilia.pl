@@ -48,8 +48,11 @@ esPrimoSegundo(Primo1,Primo2):-
   hijo(Primo1,X),
   hijo(Primo2,Y),
   Primo1 \= Primo2.
+ 
+descendientes(Des,Familiar):-
+  hijo(Familiar,X).
   
-descendientes(Familiar):-
+descendientes(Des,Familiar):-
   hijo(Familiar,X),
-  descentiente(X).
+  descentiente(Des,X).
  

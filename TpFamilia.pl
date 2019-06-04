@@ -50,7 +50,7 @@ esPrimoSegundo(Primo1,Primo2):-
   Primo1 \= Primo2.
  
 descendientes(Des,Familiar):-
-  hijo(Familiar,X).
+  hijo(Familiar,Des).
   
 descendientes(Des,Familiar):-
   hijo(Familiar,X),
